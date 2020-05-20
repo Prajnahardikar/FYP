@@ -15,7 +15,7 @@ def slice_data(file_name):
 
         if dictionary[key]==1:              
 
-            sliced_df = df[key:key+1.3]     #<---- Make it 1.25..time in seconds only...or 1250 from the normal index
+            sliced_df = df[key:round((key+1.3),3)]     #<---- Make it 1.25..time in seconds only...or 1250 from the normal index
             #path = r"C:\Users\FYP\inria-bci-challenge\Sliced_data\\" + file_name[0:len(file_name)-4] + "_FB_"+ str(i)+ ".csv"
             #sliced_df.to_csv(path)
 
